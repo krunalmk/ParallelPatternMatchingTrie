@@ -1,4 +1,8 @@
 # ParallelPatternMatchingTrie
+## About the project
+This project is Parallel and Distributed Computing course's J-component ( at VIT Chennai). Here main idea is to match and search words efficiently among text files in a directory. The files are indexed using multiprocessing. The indexed files are then searched using a Trie.
+In other words, this project is word autocomplete using multiprocessing and trie.
+
 ## Downloading the file
 1. Execute following command to download the project.
 ```
@@ -36,6 +40,7 @@ python3 main.py guten #Example: to get autocomplete suggestions from the text fi
                 }
         }
 }
+4. Multiprocessing concept is used to index the files efficiently.
                                     
 ```
 ### Algorithm for searching the prefix
