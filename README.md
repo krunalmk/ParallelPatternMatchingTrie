@@ -1,4 +1,4 @@
-# ParallelPatternMatchingTrie
+# ParallelPatternMatchingTrie ( TrieMatch)
 ## About the project
 This project is Parallel and Distributed Computing course's J-component ( at VIT Chennai). Here main idea is to match and search words efficiently among text files in a directory. The files are indexed using multiprocessing. The indexed files are then searched using a Trie.
 In other words, this project is word autocomplete using multiprocessing and trie.
