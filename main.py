@@ -14,15 +14,27 @@ def solution(searchPrefix, listOfStreamers):
     else:
         return comp
 
+def getSearchResults( TheTrie, searchPrefix):
+    status = [["Found"], ["noMatches"]]
+    comp = TheTrie.printAutoSuggestions( searchPrefix)
+    
+    if len(comp) <= 0: 
+        return(status[1])
+    else:
+        return comp
+    
 data = {}
 
 with open('data.json', 'r') as fp:
-    # data = pickle.load(fp)
     data = json.load(fp)
     
 print()
 
-result = solution(sys.argv[1], list(data.keys()))
+TheTrie = Trie()
+TheTrie.formTrie(data.keys())
+
+result = getSearchResults( TheTrie, sys.argv[1])
+
 # print("result", result)
 for eachItem in result:
     print( eachItem, data[eachItem])

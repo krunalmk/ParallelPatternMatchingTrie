@@ -11,8 +11,9 @@ def readFromFiles(eachFile):
         contentFromFile = {}
         i = 0
         page = 0
+        num_lines = sum(1 for line in open(eachFile))
         temp = " "
-        while page != 2000:
+        while page != num_lines:
             temp = file.readline().strip()
             wordInfo = temp.strip().split()
 
