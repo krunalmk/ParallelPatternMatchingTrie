@@ -32,8 +32,12 @@ with open('data.json', 'r') as fp:
     
 print()
 
+start_time = time.time() * 1000
 TheTrie = Trie()
 TheTrie.formTrie(data.keys())
+end_time = time.time() * 1000
+time_to_create_trie = end_time-start_time
+print("Time required for creating Trie from indexed file is", time_to_create_trie, "ms")
 
 # field names 
 fields = ['Word', 'Time ( in milliseconds)']
