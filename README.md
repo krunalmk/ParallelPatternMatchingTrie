@@ -9,7 +9,7 @@ In other words, this project is word autocomplete using multiprocessing and trie
 ## Downloading the file
 1. Execute following command to download the project.
 ```
-git clone https://github.com/krunalmk/ParallelPatternMatchingTrie.git
+git clone https://github.com/krunalmk/TriePDC.git
 ```
 2. Extract the zip.
 
